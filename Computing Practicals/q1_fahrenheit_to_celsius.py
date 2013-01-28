@@ -1,4 +1,4 @@
-#Name: Python BMI CALCULATHOR.
+#Name: FAHRENHEIT TO CELCIUS CONVERTHOR.
 #Author: Ng Yi Jun Alan (NALA)
 #Created: 1/24/2013
 #Modified: 1/24/2013
