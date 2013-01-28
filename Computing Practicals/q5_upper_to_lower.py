@@ -21,4 +21,5 @@ while restart=="yes":
     else:
         print ("error, only 1 letter supported.")
 
+    print()
     restart=input("do you wish to try again? (yes/no)")

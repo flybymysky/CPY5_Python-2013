@@ -8,6 +8,7 @@ print("enter ASCII code to retrieve its character.")
 
 restart="yes"
 while restart=="yes":
+    print()
 
     #provide ASCII code
     number = input("enter ASCII code (integer, O-127): ")

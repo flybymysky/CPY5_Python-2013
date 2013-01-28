@@ -4,9 +4,12 @@
 #Modified: 1/27/2013
 #Description: Generate a payroll.
 
+print("Welcome! You may generate your payroll here.")
+
 restart="yes"
 while restart=="yes":
-
+    print()
+    
     #provide information
     name = input("enter name: ")
     hours = input("enter no. of hours worked weekly: ")
@@ -28,5 +31,6 @@ while restart=="yes":
     print("CPF contribution at",CPFinput,"% = $", '{0:.2f}'.format(float(CPFoutput)))
     print()
     print("Net pay = $", '{0:.2f}'.format(float(netpay)))
-
+    
+    print()
     restart= input("do you wish to try again? (yes/no)")
