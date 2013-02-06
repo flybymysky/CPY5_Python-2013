@@ -1,23 +1,24 @@
-#Name: FAHRENHEIT TO CELCIUS CONVERTHOR.
+#Name: LEAP YEAR DETERMINOR
 #Author: Ng Yi Jun Alan (NALA)
 #Created: 1/24/2013
 #Modified: 1/24/2013
-#Description: Fahrenheit to Celcius Converter.
+#Description: Determine if year is leap year.
 
-print("Welcome to the Fahrenheit to Celcius CONVERTER! :D")
+print("Determine if Year is a Leap Year here!")
 
 restart="yes"
 while restart=="yes":
     print()
 
-    #Input Fahrenheit value
-    Fahrenheit= (input("enter Fahrenheit here for conversion!"))
+    #Input Year
+    Year= int(input("enter Year!"))
 
-    #Convert Fahrenheit to Celcius
-    Celcius= 5/9*(float(Fahrenheit)-32)
-    #Display Result
-    print('{0:.2f}'.format(Celcius),"degrees(2dp)")
-
+    #Print if Leap Year or not
+    if Year%4==0:
+        print(Year, "is leap year.")
+    else:
+        print(Year, "is not a leap year.")
+    
     print()
     restart= input("Do you want to try again(yes/no)?")
 

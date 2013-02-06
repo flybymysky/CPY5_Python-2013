@@ -4,7 +4,7 @@
 #Modified: 2/5/2013
 #Description: Find top 2 highest scorers' name & score from list of students & their scores.
 
-print("Welcome to the Fahrenheit to Celcius CONVERTER! :D")
+print("Provide Students' names & scores for top 2 scorers.")
 print()
 
 #Collate list of students and their scores
@@ -15,7 +15,7 @@ print()
 name = []
 score = []
 
-while len(score)<= int(number)-1:
+while len(score) < int(number):
     name.append(input("NAME of student:"))
     score.append(input("SCORE in 3 digits(i.e.098,005,100):"))
     print()
