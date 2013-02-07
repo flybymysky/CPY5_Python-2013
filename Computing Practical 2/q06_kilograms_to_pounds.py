@@ -9,15 +9,10 @@ print()
 
 #Print Table
 print("Kilograms Pounds")
-pounds = -2.2
+pounds = 0
 for kilograms in range(1,11):
     pounds = pounds + 2.2
-    if pounds<8:
-        print(kilograms, '{0:>11.1f}'.format(pounds+2.2))
-    elif pounds<19:
-        print(kilograms, '{0:>12.1f}'.format(pounds+2.2))
-    elif pounds>19:
-        print(kilograms, '{0:>11.1f}'.format(pounds+2.2))
+    print('{0:<9}'.format(kilograms), '{0:<.1f}'.format(pounds))
 
 print()
 input("Press enter to exit.")
