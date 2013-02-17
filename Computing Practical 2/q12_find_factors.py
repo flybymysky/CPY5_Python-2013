@@ -26,7 +26,10 @@ while restart=="yes":
             factor=factor+1
     
     #Print Factors
-    print(factors)
+    if len(factors) == 0:
+        print(Integer)
+    else:
+        print(factors)
 
     print()
     restart=input("do you want to try again? (yes/no)")

@@ -17,7 +17,11 @@ score = []
 
 while len(score) < int(number):
     name.append(input("NAME of student:"))
-    score.append(input("SCORE in 3 digits(i.e.098,005,100):"))
+    scoreA= input("SCORE in 3 digits(i.e.098,005,100):")
+    while int(scoreA) > int(totalscore):
+        print("error. Score not valid.")
+        scoreA = input("SCORE in 3 digits(i.e.098,005,100):")
+    score.append(scoreA)
     print()
 
 #Extract Top 2 highest scorers' name & score
