@@ -13,7 +13,7 @@ primes = []
 x=2
 while len(primes)<= 1000:
     if is_prime(x)==True:
-        primes.append(x)
+        primes.append(str(x).ljust(4))
         x=x+1
     else:
         x=x+1
@@ -21,7 +21,6 @@ while len(primes)<= 1000:
 a=0
 b=10
 while b<=1000:
-    print(str(repr(primes[a:b]).replace(",","")))
-    
+    print(" ".join(primes[a:b]))
     a=a+10
     b=b+10
