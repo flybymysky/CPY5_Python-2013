@@ -12,7 +12,7 @@ def m_series(i):
     return(result)
 
 #main
-print("i"+"m(i)".rjust(9))
+print("i"+"m(i)".rjust(9)) #rjust or format, both works.
 a=0
 for x in range(1,21):
     print('{0:<5}'.format(x),'{0:<10.4f}'.format(m_series(1+a)))
