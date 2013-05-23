@@ -21,14 +21,10 @@ def check_int(n):
     
     
 def reverse_int(n):
-    reverse = ""
-    length = len(n)-1
-    n = str(int(n)) #convert n to integer: removes any redundant zeroes at the front
+    absn = str( abs(int(n)) ) #remove negative sign if any
+    reverse = absn[::-1]
     if n[0] == "-": #check if negative number
-        reverse = "-"
-    for i in range(0, length+1):
-        if n[length-i] != "-":
-            reverse = reverse + n[length-i]
+        reverse = "-"+reverse
     return(reverse)
 
 # main
@@ -41,4 +37,4 @@ while yesno(restart)==1:
     print(reverse_int(Input))
     print()
     
-    restart = input("do you want to try again? (yes/no)")
+    restart = input("do you want to try again?")
