@@ -1,4 +1,4 @@
-#filename: q1_display_reverse.py
+#filename: q2_display_pattern.py
 #author: Ng Yi Jun Alan (NALA) :D
 
 def yesno(Input): #yes no inputs
@@ -19,26 +19,26 @@ def check_int(n):
     except ValueError:
         return False
     
-    
-def reverse_int(n):
-    reverse = ""
+def display_pattern(n):
     length = len(n)-1
-    n = str(int(n)) #convert n to integer: removes any redundant zeroes at the front
-    if n[0] == "-": #check if negative number
-        reverse = "-"
+    linelength = 2*len(n)-1 #length of n with spaces inbetween
+    n = str(int(n)) #remove any zeroes infront
+    digits = []
+    lines = []
     for i in range(0, length+1):
-        if n[length-i] != "-":
-            reverse = reverse + n[length-i]
-    return(reverse)
+        digits.append(n[length-i])
+        lines.append(" ".join(digits[::-1]).rjust(linelength))
+    return "\n".join(lines)
 
 # main
 restart = "Y"
 while yesno(restart)==1:
-    
+
     Input = input("Enter integer: ")
     while not check_int(Input):
-        Input = input("Invalid input. Enter integer: ")
-    print(reverse_int(Input))
-    print()
+        Input = input("Invalid integer. Enter integer: ")
     
+    print(display_pattern(Input))
+
+    print()
     restart = input("do you want to try again? (yes/no)")
