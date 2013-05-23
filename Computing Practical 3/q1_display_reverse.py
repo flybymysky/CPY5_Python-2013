@@ -1,6 +1,14 @@
 #filename: q1_display_reverse.py
 #author: Ng Yi Jun Alan (NALA) :D
 
+def check_int(n):
+    try:
+        n = int(n)
+        return True
+    except ValueError:
+        return False
+    
+    
 def reverse_int(n):
     reverse = 0
     for i in range(0, len(str(n))):
@@ -12,7 +20,9 @@ def reverse_int(n):
 restart = "yes"
 while restart == "yes":
     
-    integer = int(input("Enter integer: "))
+    Input = input("Enter integer: ")
+    while not check_int(Input):
+        Input = input("Enter integer: ")
     print(reverse_int(integer))
     print()
     
