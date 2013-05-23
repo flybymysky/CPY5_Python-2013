@@ -11,6 +11,6 @@ def m(i):
     return(answer)
 
 #main
-print("i     m(i)")
+print("i"+"m(i)".rjust(9)) #rjust or format, both works.
 for x in range(1,20,2):
     print('{0:<5}'.format(x),'{0:<10.11f}'.format(m(x)))
